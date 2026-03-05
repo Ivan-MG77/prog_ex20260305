@@ -64,6 +64,22 @@ public class CentroFP {
         return sb.toString();
     }
 
+    public int contarAlumnos(){
+        int contadorAlumnos = 0;
+
+        for (int i = 0; i < MAX_ALUMNOS; i++) {
+            if (alumnos[i] != null) {
+                contadorAlumnos++;
+            }
+        }
+        return contadorAlumnos;
+
+    }
+
+
+
+
+
 
 
 
