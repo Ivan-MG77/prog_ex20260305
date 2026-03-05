@@ -37,6 +37,21 @@ public class CentroFP {
         return posicionLibre;
     }
 
+    public boolean registrarAlumno(Alumno alumno){
+        boolean resutadoRegistro = false;
+
+        for (int i = 0; i < MAX_ALUMNOS; i++) {
+            if (alumnos[i] == null) {
+                alumnos[i] = alumno;
+                resutadoRegistro = true;
+            }
+        }
+        return resutadoRegistro;
+    }
+
+
+
+
 
 
 
