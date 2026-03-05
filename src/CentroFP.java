@@ -24,6 +24,22 @@ public class CentroFP {
         return resultadoBusqueda;
     }
 
+    private int buscarPrimerHuecoLibre() {
+        int posicionLibre = -1;
+        boolean seguirBuscando = true;
+
+        for (int i = 0; i < MAX_ALUMNOS && seguirBuscando; i++) {
+            if (alumnos[i] == null) {
+                posicionLibre = i;
+                seguirBuscando = false;
+            }
+        }
+        return posicionLibre;
+    }
+
+
+
+
 
 
 }
