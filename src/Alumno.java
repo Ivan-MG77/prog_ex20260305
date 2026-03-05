@@ -12,6 +12,23 @@ public class Alumno {
         this.edad = edad;
     }
 
+    public int getId() {
+        return this.id;
+    }
+
+    public String getNombre() {
+        return this.nombre;
+    }
+
+    public String getTituloFP() {
+        return this.tituloFP;
+    }
+
+    public int getEdad() {
+        return this.edad;
+    }
+
+
 
 
 }
