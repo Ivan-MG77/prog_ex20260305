@@ -10,4 +10,20 @@ public class CentroFP {
 
     }
 
+    public Alumno buscarAlumno(int id){
+
+        boolean seguirBuscando = false;
+        Alumno resultadoBusqueda = null;
+
+        for (int i = 0; i < MAX_ALUMNOS && seguirBuscando; i++) {
+            if (alumnos[i].getId() == id) {
+                seguirBuscando = true;
+                resultadoBusqueda = alumnos[i];
+            }
+        }
+        return resultadoBusqueda;
+    }
+
+
+
 }
