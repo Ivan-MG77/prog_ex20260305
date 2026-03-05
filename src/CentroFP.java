@@ -46,7 +46,22 @@ public class CentroFP {
                 resutadoRegistro = true;
             }
         }
+
         return resutadoRegistro;
+    }
+
+    public String mostrarAlumnos() {
+
+        StringBuilder sb = new StringBuilder("ALumnos : {");
+
+        for (int i = 0; i < MAX_ALUMNOS; i++) {
+            if (alumnos[i] != null) {
+                sb.append(alumnos[i].toString());
+
+            }
+        }
+         sb.append("\n }");
+        return sb.toString();
     }
 
 
