@@ -28,7 +28,17 @@ public class Alumno {
         return this.edad;
     }
 
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
 
+        sb.append("Alumno {");
+        sb.append("Id=").append(id);
+        sb.append(", Nombre=").append(nombre);
+        sb.append(", TituloFP=").append(tituloFP);
+        sb.append(", Edad=").append(edad);
 
-
+        sb.append("}");
+        return sb.toString();
+    }
 }
